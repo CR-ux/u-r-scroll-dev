@@ -1,0 +1,4 @@
+# Ignore Godot build and import files
+.import/
+.export/
+export.cfg
