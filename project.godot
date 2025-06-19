@@ -1,0 +1,6 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+config/name="u-r-scroll-dev"
+run/main_scene="res://Main.tscn"

@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource path="res://hex_grid.gd" type="Script" id=1]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="InfoPanel" type="Panel" parent="HBox"]
+custom_minimum_size = Vector2(250, 0)
+size_flags_vertical = 3
+
+[node name="InfoText" type="RichTextLabel" parent="HBox/InfoPanel"]
+text = "Game info goes here."
+
+[node name="Grid" type="Control" parent="HBox"]
+script = ExtResource(1)
+size_flags_horizontal = 3
+size_flags_vertical = 3
